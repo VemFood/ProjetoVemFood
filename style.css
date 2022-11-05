@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   margin: 0px;
 }
@@ -10,6 +10,8 @@ body {
 
 .cabecalho {
   display: flex;
+
+  text-transform: uppercase;
 
   place-items: center;
 
@@ -50,7 +52,10 @@ a {
 }
 
 .section {
-  background-color: #c93f0391;
+  background-color: #121214;
+  background-image: url(./assets/bg.svg);
+  background-position-y: 55.6%;
+  background-position-x: center;
   display: grid;
 }
 
@@ -69,20 +74,34 @@ a {
   max-width: 80%;
 }
 
+.mini {
+  display: flex;
+  flex: 1;
+
+  margin-top: 50px;
+  margin-left: 150px;
+}
+
+.mini-cards {
+  max-width: 50%;
+}
+
 .texto {
   text-transform: uppercase;
   text-align: center;
   text-decoration: underline;
 
-  margin-right: 100px;
+  margin-right: 150px;
 
-  color: white;
+  color: #c5b453;
 
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .rodape {
   margin-bottom: 50px;
+
+  text-transform: uppercase;
 }
 
 .inforodape {
@@ -109,13 +128,25 @@ a {
 
 .imagens {
   display: flex;
-  justify-content: end;
-  gap: 20px;
+  justify-content: center;
+  gap: 300px;
 
-  margin-right: 18.5%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-right: 200px;
+  margin-left: 200px;
+
+  background: url(/assets/bg.svg);
+  background-color: #121214;
+  background-position-y: 55.6%;
+  background-position-x: center;
+
+  border-radius: 10px;
 
   flex: 1;
+}
+
+.social {
+  margin-right: 20px;
 }
 
 .face {
