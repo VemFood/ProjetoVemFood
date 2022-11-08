@@ -5,86 +5,170 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet" />
-  <title> VemFood | Home </title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>VemFood</title>
 </head>
 
 <body>
   <header class="cabecalho">
-    <img class="logo" src="img/vemfood1.png" alt="Logo VemFood">
-    <div class="navbar">
-      <a href="/">Inicio</a>
-      <a href="/">Restaurantes</a>
-      <a href="/">Mais bem avaliados</a>
-    </div>
-    <input class="navbusca" type="text" placeholder="Busque por Restaurantes">
-  </header>
-  <hr>
+    <div class="container">
+      <img class="container__logo" src="/img/Vem_Food.png" alt="">
 
-  <section class="section">
-    <main class="conteudo">
-      <a href="/"><img class="cards" src="img/card1.webp" alt=""></a>
-      <a href=""><img class="cards" src="img/card2.png" alt=""></a>
-      <a href=""><img class="cards" src="img/card3.jpg" alt=""></a>
-      <a href=""><img class="cards" src="img/card4.jpg" alt=""></a>
-    </main>
-    <div class="mini">
-      <a href="/">
-        <img class="mini-cards" src="/img/lanches.jpg" alt="">
-        <p class="texto">Hamburgueria</p>
-      </a>
-      <a href="/">
-        <img class="mini-cards" src="/img/pizza.jpg" alt="">
-        <p class="texto">Pizzaria</p>
-      </a>
-      <a href="/">
-        <img class="mini-cards" src="/img/brasileira.jpg" alt="">
-        <p class="texto">Brasileira</p>
-      </a>
-      <a href="/">
-        <img class="mini-cards" src="/img/japonesa.jpg" alt="">
-        <p class="texto">Japonesa</p>
-      </a>
-      <a href="/">
-        <img class="mini-cards" src="/img/vegetariana.jpg" alt="">
-        <p class="texto">Vegetariano</p>
-      </a>
-      <a href="/">
-        <img class="mini-cards" src="/img/doces.jpg" alt="">
-        <p class="texto">Massa</p>
-      </a>
+      <ul class="lista__menu">
+        <li class="lista__menu-item"><a href="/">Inicio</a></li>
+        <li class="lista__menu-item"><a href="/">Restaurantes</a></li>
+        <li class="lista__menu-item"><a href="/">Bem avaliados</a></li>
+      </ul>
     </div>
+
+  </header>
+
+  <section class="banner">
+
+    <h2 class="banner__titulo">Busque pelos melhores restaurantes.</h2>
+    <p class="banner__texto">Encontre em nosso site os melhores restaurantes de São Paulo!</p>
+    <input class="banner__pesquisa" type="search" placeholder="Busque aqui seu restaurante">
 
   </section>
-  <hr>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Informações Restaurantes</h2>
+    <!-- Slider main container -->
+    <div class="carrossel__container">
+      <div class="swiper">
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><a href="#"><img src="./img/card1.webp" alt="Restaurantes queiridinhos do VemFood"></a></div>
+          <div class="swiper-slide"><a href="#"><img src="./img/card2.png" alt="Restaurantes com Cupom"></a></div>
+          <div class="swiper-slide"><a href="#"><img src="./img/card3.jpg" alt="Almoço com entrega grátis"></a></div>
+          <div class="swiper-slide"><a href="#"><img src="./img/card4.jpg" alt="Restaurantes com entrega grátis"></a></div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+
+
+      <div class="card">
+        <!-- Primeira linha-->
+        <div class="card__descricao">
+          <!-- Primeira coluna -->
+          <div class="descricao">
+            <h3 class="descricao__titulo">Vai um Hamburger aí ?!</h3>
+            <h2 class="descricao__titulo-lanche">Hamburgers</h2>
+            <p class="descricao__texto">Encontre aqui os melhores Hamburgers de São Paulo.</p>
+          </div>
+          <!-- Segunda coluna -->
+          <img class="descricao__imagem" src="img/lanches.jpg" alt="Imagem Lanche">
+        </div>
+
+        <div class="card__botoes">
+          <!-- Primeira coluna -->
+          <a class="botoes__ancora" href="#">Clique Aqui !!</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="card">
+        <!-- Primeira linha-->
+        <div class="card__descricao">
+          <!-- Primeira coluna -->
+          <div class="descricao">
+            <h3 class="descricao__titulo">Vai um sushi aí ?!</h3>
+            <h2 class="descricao__titulo-lanche">Japonesa</h2>
+            <p class="descricao__texto">Encontre aqui as melhores comidas Japonesas de São Paulo.</p>
+          </div>
+          <!-- Segunda coluna -->
+          <img class="descricao__imagem" src="img/japonesa.jpg" alt="Imagem Lanche">
+        </div>
+
+        <div class="card__botoes">
+          <!-- Primeira coluna -->
+          <a class="botoes__ancora" href="#">Clique Aqui !!</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="card">
+        <!-- Primeira linha-->
+        <div class="card__descricao">
+          <!-- Primeira coluna -->
+          <div class="descricao">
+            <h3 class="descricao__titulo">Vai uma Pizza aí ?!</h3>
+            <h2 class="descricao__titulo-lanche">Pizza</h2>
+            <p class="descricao__texto">Encontre aqui as melhores pizzas de São Paulo.</p>
+          </div>
+          <!-- Segunda coluna -->
+          <img class="descricao__imagem" src="img/pizza.jpg" alt="Imagem Lanche">
+        </div>
+
+        <div class="card__botoes">
+          <!-- Primeira coluna -->
+          <a class="botoes__ancora" href="#">Clique Aqui !!</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="card">
+        <!-- Primeira linha-->
+        <div class="card__descricao">
+          <!-- Primeira coluna -->
+          <div class="descricao">
+            <h3 class="descricao__titulo">Vai um doce aí ?!</h3>
+            <h2 class="descricao__titulo-lanche">Doces</h2>
+            <p class="descricao__texto">Encontre aqui os melhores doces de São Paulo.</p>
+          </div>
+          <!-- Segunda coluna -->
+          <img class="descricao__imagem" src="img/doces.jpg" alt="Imagem Lanche">
+        </div>
+
+        <div class="card__botoes">
+          <!-- Primeira coluna -->
+          <a class="botoes__ancora" href="#">Clique Aqui !!</a>
+        </div>
+      </div>
+
+  </section>
+
 
   <footer class="rodape">
-    <div class="inforodape">
-      <a href="/">Quem somos</a>
-      <a href="/">Fale conosco</a>
-      <a href="/">Trabalhe conosco</a>
-      <a href="/">Inscreva seu restaurante</a>
-    </div>
-    <div class="social-imagens">
-      <div class="socialrodape">
-      </div>
-      <div class="imagens">
-        <img class="logorodape" src="img/vemfood1.png" alt="Logo VemFood">
-        <p>
-          <center>Social
-            <br>
-            <a href="/"><img class="social" src="img/insta.png" alt=""></a>
-            <a href="/"><img class="social" src="img/twitter.png" alt=""></a>
-            <a href="/"> <img class="social" class="face" src="img/facebook.png" alt=""></a>
-        </p>
-      </div>
+    <h2 class="rodape__titulo">VemFood</h2>
+    <div class="rodape__descricao">
+      <p class="rodape__texto"><a href="/">Quem somos</a></p>
+      <p class="rodape__texto"><a href="/">Trabalhe Conosco</a></p>
+      <p class="rodape__texto"><a href="#">Inscreva seu restaurante</a></p>
     </div>
 
+    <input class="rodape__email" type="text" placeholder="Cadastre seu e-mail">
 
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    })
+  </script>
 </body>
 
 </html>

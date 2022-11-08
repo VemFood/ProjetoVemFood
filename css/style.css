@@ -1,0 +1,12 @@
+@import url(header.css);
+@import url(banner.css);
+@import url(carrossel.css);
+@import url(footer.css);
+
+body {
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+
+  font-family: Roboto;
+}
