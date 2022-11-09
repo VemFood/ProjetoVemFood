@@ -22,6 +22,8 @@ Através da nossa plataforma digital, os usuários têm a opção de verificar o
 - Vinicius Farias
 - Erick Fernandes
 - Filipe Machado
+  <<<<<<< HEAD
 -
 -
--
+- =======
+  > > > > > > > d91de37873ed85d5acd332e982c296ec3ba9bd10
