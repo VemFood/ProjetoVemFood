@@ -10,6 +10,7 @@ Através da nossa plataforma digital, os usuários têm a opção de verificar o
 
 - HTML
 - CSS3
+- Swiper
 - Netlify
 
 # Integrantes!
