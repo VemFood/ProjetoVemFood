@@ -1,0 +1,124 @@
+.restaurantes {
+  background: #f1f1f1;
+  padding-left: 1rem;
+  display: grid;
+  grid-template-areas:
+    "cabecalho"
+    "conteudo";
+  grid-template-columns: auto;
+}
+
+.restaurantes__conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: conteudo;
+  padding: 1rem 0;
+}
+
+.restaurantes__card {
+  background: #fdfdfd;
+  display: grid;
+  grid-template-areas:
+    "card-imagem"
+    "card-corpo";
+  grid-template-columns: 100%;
+}
+
+.restaurantes__card:last-child {
+  margin-right: 0;
+}
+
+.restaurantes__card___imagem {
+  grid-area: card-imagem;
+  height: 100%;
+  width: 100%;
+}
+
+.restaurantes__card___corpo {
+  display: grid;
+  grid-area: card-corpo;
+  grid-row-gap: 0.5rem;
+  grid-template-areas:
+    "card-cabecalho"
+    "card-conteudo";
+  grid-template-rows: 50px auto;
+  padding: 0.75rem;
+}
+
+.restaurantes__card___titulo {
+  color: #333333;
+  font-size: 1.5rem;
+}
+
+.restaurantes__card___data {
+  color: #808080;
+  font-size: 0.9rem;
+}
+
+.restaurantes__card___descricao {
+  color: #333333;
+  line-height: 1.5;
+  margin: 1rem 0;
+  text-align: justify;
+}
+
+.restaurantes__titulo {
+  font-weight: 500;
+}
+
+.restaurantes__icone {
+  margin-right: 0.25rem;
+}
+
+.restaurantes__cabecalho {
+  border-bottom: 1px solid #dcdcdc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurantes__botao {
+  background: transparent;
+  border: none;
+  color: #333333;
+}
+
+@media screen and (min-width: 0) {
+  .restaurantes__conteudo {
+    flex-direction: column;
+  }
+
+  .restaurantes__card {
+    grid-template-rows: 150px auto;
+    width: 100%;
+    margin-bottom: 3rem;
+    margin-right: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .restaurantes__conteudo {
+    flex-direction: row;
+  }
+
+  .restaurantes__card {
+    grid-template-rows: 173px auto;
+    margin-right: 1rem;
+    margin-top: 10px;
+    width: calc(50% - 1rem);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .restaurantes__card {
+    width: calc(33.33% - 1rem);
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .restaurantes__card {
+    margin-bottom: 0;
+    width: calc(20% - 1rem);
+    margin-top: 20px;
+  }
+}
