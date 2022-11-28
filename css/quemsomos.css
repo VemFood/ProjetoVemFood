@@ -1,0 +1,49 @@
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fdfdfd;
+  justify-content: center;
+  background-image: url(../img/pic2.jpg);
+  background-position: center;
+}
+
+.section h1 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 70px;
+  color: white;
+}
+
+.section__img {
+  max-width: 25%;
+  margin-bottom: 2rem;
+}
+
+.section__container {
+  display: flex;
+  align-items: center;
+}
+
+.section__texto {
+  margin-bottom: 5rem;
+}
+
+.section__container p {
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+}
+
+@media screen and (max-width: 1500px) {
+  .section__img {
+    display: none;
+  }
+
+  .section h1 {
+    margin-top: auto;
+  }
+
+  .section__texto {
+    padding: 30px;
+  }
+}
